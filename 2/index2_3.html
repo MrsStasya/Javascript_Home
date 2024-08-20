@@ -1,0 +1,26 @@
+<!-- Задание 3
+В переменной day лежит какое-то число из интервала от 1 до 31.
+Определите в какую декаду месяца попадает это число (в первую, вторую или третью). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day = prompt('Please, enter the day number from 1 to 31');
+        if(day >= 1 & day <= 10){
+            alert('The day is in the 1 decade')
+        } else if(day>10 & day <= 20){
+            alert('The day is in the 2 decade')
+        } else if(day>21 & day <= 31){
+            alert('The day is in the 3 decade')
+        } else {
+            alert("Something's wrong. Enter a different value");
+        }
+    </script>
+</body>
+</html>
